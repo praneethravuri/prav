@@ -37,43 +37,48 @@ export const experiences = [
   }
 ];
 
-
 export const projects = [
   {
     title: "Lighting Engine",
     description: "2D Lighting Framework Pygame",
     tags: ["Python", "Pygame", "OpenGL", "Graphics"],
-    year: "2023"
+    year: "2023",
+    link : ""
   },
   {
     title: "WakeWord Engine",
     description: "TensorFlow Wakeword Engine Python",
     tags: ["Python", "TensorFlow", "Machine Learning", "Audio Processing"],
-    year: "2022"
+    year: "2023",
+    link : ""
   },
   {
     title: "Square Game Halloween",
     description: "Pygame Arcade Game",
     tags: ["Python", "Pygame", "Game Development"],
-    year: "2022"
+    year: "2023",
+    link : ""
   },
   {
     title: "Personal Website",
     description: "WebGL2 Portfolio Website",
     tags: ["JavaScript", "WebGL", "Three.js", "GLSL"],
-    year: "2024"
+    year: "2023",
+    link : ""
   },
   {
     title: "Password Vault",
     description: "Python Password Locker Fernet Encryption",
     tags: ["Python", "Cryptography", "Security"],
-    year: "2022"
+     year: "2023",
+    link : ""
   },
   {
     title: "Jarvis",
     description: "AI Personal Assistant Python",
     tags: ["Python", "NLP", "Speech Recognition", "AI"],
-    year: "2021"
+    year: "2023",
+    link : ""
   }
 ];
 
@@ -88,11 +93,6 @@ export const socialLinks = [
     platform: "linkedin",
     link: "https://linkedin.com/in/yourusername",
     label: "LinkedIn"
-  },
-  {
-    platform: "twitter",
-    link: "https://twitter.com/yourusername",
-    label: "Twitter"
   },
   {
     platform: "email",

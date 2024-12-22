@@ -7,40 +7,51 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { projects } from "@/lib/constants"
 
-interface Project {
-    title: string
-    description: string
-    tags: string[]
-    year: string
-}
-
 export default function ProjectSection() {
     return (
-        <section id="projects" className="space-y-6">
-            <h2 className="text-2xl font-semibold text-white">Projects</h2>
-            <p className="text-gray-400">
+        <section id="projects" className="space-y-1 sm:space-y-2 md:space-y-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white tracking-tight">
+                Projects
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-zinc-400 leading-relaxed">
                 Below are some of the projects I have developed over my 6+ years of
                 coding. This is just a small selection of the many projects I've worked
                 on, with several others not making the list.
             </p>
-            <Accordion type="single" collapsible className="w-full">
+
+
+            <Accordion
+                type="single"
+                collapsible
+                className="w-full space-y-2 sm:space-y-3 md:space-y-4"
+            >
                 {projects.map((project, index) => (
-                    <AccordionItem key={index} value={`item-${index}`}>
-                        <AccordionTrigger className="text-left">
+                    <AccordionItem
+                        key={index}
+                        value={`item-${index}`}
+                        className="border-gray-700"
+                    >
+                        <AccordionTrigger className="text-left hover:bg-zinc-900  rounded-lg transition-colors">
                             <div className="flex justify-between w-full pr-4">
-                                <span>{project.title}</span>
-                                <span className="text-gray-500 text-sm">{project.year}</span>
+                                <span className="text-sm sm:text-base md:text-lg font-medium text-white">
+                                    {project.title}
+                                </span>
+                                <span className="text-xs sm:text-sm text-gray-400">
+                                    {project.year}
+                                </span>
                             </div>
                         </AccordionTrigger>
                         <AccordionContent>
-                            <div className="space-y-4 pt-2">
-                                <p>{project.description}</p>
+                            <div className=" pt-2 sm:pt-3">
+                                <p className="text-xs sm:text-sm md:text-base text-zinc-400 leading-relaxed">
+                                    {project.description}
+                                </p>
                                 <div className="flex flex-wrap gap-2">
                                     {project.tags.map((tag) => (
                                         <Badge
                                             key={tag}
                                             variant="outline"
-                                            className="text-gray-400 border-gray-700"
+                                            className="text-xs sm:text-sm text-zinc-400 "
                                         >
                                             {tag}
                                         </Badge>
