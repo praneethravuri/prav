@@ -35,6 +35,7 @@ body {
     --radius: 0.5rem;
     --neon-orange : 22 100% 50%;
     --dark-orange: 22 100% 7%;
+    --turquoise: 153 97% 49%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -63,6 +64,7 @@ body {
     --chart-5: 340 75% 55%;
     --neon-orange : 22 100% 50%;
     --dark-orange: 22 100% 7%;
+    --turquoise: 153 97% 49%;
   }
 }
 

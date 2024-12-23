@@ -45,6 +45,7 @@ export default {
   			ring: 'hsl(var(--ring))',
 			neonOrange : 'hsl(var(--neon-orange))',
 			darkOrange : 'hsl(var(--dark-orange))',
+			turquoise : 'hsl(var(--turquoise))',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',

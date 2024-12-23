@@ -100,3 +100,43 @@ export const socialLinks = [
     label: "Email"
   }
 ]
+
+
+export const education = [
+  {
+    company: "Tech Giant Corp",
+    position: "Senior Software Engineer",
+    location: "San Francisco, CA",
+    duration: "2022 - Present",
+    content: [
+      "Led development of core microservices architecture serving 1M+ daily users",
+      "Mentored junior developers and conducted technical interviews",
+      "Implemented CI/CD pipelines reducing deployment time by 60%"
+    ],
+    tags: ["React", "Node.js", "AWS", "Docker", "Kubernetes"]
+  },
+  {
+    company: "Startup Innovation",
+    position: "Full Stack Developer",
+    location: "New York, NY",
+    duration: "2020 - 2022",
+    content: [
+      "Developed and launched company's flagship SaaS product",
+      "Built responsive web applications using modern JavaScript frameworks",
+      "Integrated multiple third-party APIs and payment systems"
+    ],
+    tags: ["TypeScript", "Next.js", "PostgreSQL", "Redis", "Stripe"]
+  },
+  {
+    company: "Digital Agency",
+    position: "Junior Developer",
+    location: "Boston, MA",
+    duration: "2018 - 2020",
+    content: [
+      "Created custom WordPress themes and plugins for clients",
+      "Optimized website performance and SEO metrics",
+      "Collaborated with design team on UI/UX improvements"
+    ],
+    tags: ["PHP", "WordPress", "JavaScript", "MySQL", "SASS"]
+  }
+];
